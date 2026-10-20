@@ -5,7 +5,7 @@ package.domain = org.creator
 source.dir = .
 source.include_exts = py,png,jpg,kv,atlas,txt
 version = 1.0.0
-requirements = python3,kivy==2.3.1,camera4kivy,gestures4kivy,pyzbar,libzbar,pillow,qrcode
+requirements = python3,kivy==2.3.1,camera4kivy,gestures4kivy,pyzbar,libzbar,pillow,qrcode,charset-normalizer==3.4.2
 orientation = portrait
 fullscreen = 0
 android.permissions = CAMERA

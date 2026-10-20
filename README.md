@@ -52,7 +52,7 @@ The database is created in the app's user data directory (or the current directo
 5. On a successful run, open the workflow run's **Artifacts** section and download `smart-student-attendance-debug-apk`. The uploaded file is the debug APK from `bin/*.apk`.
 6. Transfer the APK to an Android device, allow installation from the file manager/source when Android asks, and install it. Android may show an unsigned-debug-build warning; this is not a Play Store release APK.
 
-The workflow checks out the CameraX provider required by Camera4Kivy, then Buildozer downloads the Android SDK/NDK and compiles native dependencies; the first run can take a long time. Check the Actions log if the toolchain or a native dependency fails. An APK has **not** been built or tested on a physical Android device as part of this source delivery.
+The workflow checks out the CameraX provider required by Camera4Kivy, then Buildozer downloads the Android SDK/NDK and compiles native dependencies; the first run can take a long time. The Android dependency list pins `charset-normalizer` to a pure-Python wheel to avoid an incompatible platform wheel being installed in the Buildozer target directory. Check the Actions log if the toolchain or a native dependency fails. The APK artifact is not committed into this source tree, and this app has not been tested on a physical Android device.
 
 ## Build locally (Linux)
 
