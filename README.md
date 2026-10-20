@@ -56,7 +56,7 @@ The workflow checks out the CameraX provider required by Camera4Kivy, then Build
 
 ## Build locally (Linux)
 
-Install Java 17, the Android build tools required by Buildozer, and Buildozer 1.5.0 with Cython 0.29.36 in a suitable Python environment. From the repository root, add the CameraX provider expected by `buildozer.spec`:
+Install Java 17, gettext/autopoint, the Android build tools required by Buildozer, and Buildozer 1.5.0 with Cython 0.29.36 in a suitable Python environment. From the repository root, add the CameraX provider expected by `buildozer.spec`:
 
 ```bash
 git clone --depth 1 https://github.com/Android-for-Python/camerax_provider.git
